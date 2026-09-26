@@ -9,8 +9,8 @@ Hands-on labs covering Linux system administration, networking, security, cloud 
 | 01 | [Deploy Linux Servers](linux-labs/lab-01-deploy-linux-servers/) | VirtualBox, Ubuntu Server, AWS EC2, Security Groups, SSH key pairs |
 | 02 | [Deploy Services, Test, and Manage Workflow](linux-labs/lab-02-deploy-services-and-workflow/) | NAT/Host-only networking, OpenSSH, Apache2, systemctl, Git/GitHub deploy workflow |
 | 03 | [Manage Access, Harden Services, Host Security Basics](linux-labs/lab-03-manage-access-harden-services/) | Users/groups, file permissions, sudo, SSH keys, sshd hardening, AllowGroups, ufw firewall |
-| 04 | [Internetworking Basics: One Router, Two Networks](linux-labs/lab-04-internetworking-one-router/) | Subnet planning, static IPs, VirtualBox internal networks, IP forwarding, default gateways |
-| 05 | [Internetworking Basics: Two Routers, Three Networks](linux-labs/lab-05-internetworking-two-routers/) | /29 subnetting, multi-router topology, static routes, next-hop routing, hop-by-hop troubleshooting |
+| 04 | [Internetworking: One Router, Two Networks](linux-labs/lab-04-internetworking-one-router/) | Subnet planning, static IPs, VirtualBox internal networks, IP forwarding, default gateways |
+| 05 | [Internetworking: Two Routers, Three Networks](linux-labs/lab-05-internetworking-two-routers/) | /29 subnetting, multi-router topology, static routes, next-hop routing, hop-by-hop troubleshooting |
 
 ## ☁️ [Cloud Labs](cloud-labs/)
 
