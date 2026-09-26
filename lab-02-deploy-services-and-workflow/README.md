@@ -9,18 +9,25 @@ This lab builds a small but complete web-hosting workflow on a local Linux serve
 3. Install **Apache HTTP Server** and serve the default page to the host machine
 4. Version-control a simple website with **Git**, push it to **GitHub**, then clone it onto the server and deploy it to Apache's web root
 
-```
- Windows host                       Ubuntu Server VM (VirtualBox)
-┌───────────────────┐   Host-only   ┌─────────────────────────────┐
-│ VS Code + Git     │──────────────▶│ enp0s8  192.168.56.x        │
-│ PowerShell (SSH)  │   SSH :22     │  ├─ sshd                     │
-│ Browser (HTTP)    │   HTTP :80    │  └─ apache2 → /var/www/html  │
-└─────────┬─────────┘               │ enp0s3  10.0.2.x (NAT) ──▶ Internet
-          │ git push                └──────────────▲──────────────┘
-          ▼                                        │ git clone
-      ┌────────┐                                   │
-      │ GitHub │───────────────────────────────────┘
-      └────────┘
+```mermaid
+flowchart LR
+    subgraph Host["Windows host"]
+        VS["VS Code + Git"]
+        PS["PowerShell (SSH client)"]
+        BR["Browser"]
+    end
+    subgraph VM["Ubuntu Server VM (VirtualBox)"]
+        SSHD["sshd :22"]
+        APACHE["apache2 :80<br/>/var/www/html"]
+    end
+    GH[("GitHub")]
+    NET(("Internet"))
+
+    PS -->|"SSH · Host-only 192.168.56.x"| SSHD
+    BR -->|"HTTP · Host-only 192.168.56.x"| APACHE
+    VS -->|git push| GH
+    GH -->|git clone| VM
+    VM -->|"NAT 10.0.2.x"| NET
 ```
 
 ## Objectives

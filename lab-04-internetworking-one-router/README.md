@@ -14,15 +14,18 @@ This lab builds two separate IPv4 networks in VirtualBox and connects them with 
 
 ## Topology
 
-```
-          network-1  192.168.1.0/24                     network-2  192.168.2.0/24
-  ┌──────────────────────────────────────┐        ┌──────────────────────────────────┐
-  │                                      │        │                                  │
-  │  machine-A  192.168.1.2 ──┐          │        │                                  │
-  │                           ├──[ switch ]──(enp0s3) router-1 (enp0s8)──[ switch ]── machine-C  192.168.2.2
-  │  machine-B  192.168.1.3 ──┘          │   192.168.1.1        192.168.2.1          │
-  │                                      │        │                                  │
-  └──────────────────────────────────────┘        └──────────────────────────────────┘
+```mermaid
+flowchart LR
+    subgraph N1["network-1 · 192.168.1.0/24"]
+        A["machine-A<br/>192.168.1.2"]
+        B["machine-B<br/>192.168.1.3"]
+    end
+    R1{{"router-1"}}
+    subgraph N2["network-2 · 192.168.2.0/24"]
+        C["machine-C<br/>192.168.2.2"]
+    end
+    A & B ---|"enp0s3 · 192.168.1.1"| R1
+    R1 ---|"enp0s8 · 192.168.2.1"| C
 ```
 
 In VirtualBox, each "switch" is an **Internal Network** (`network-1`, `network-2`). Putting a VM's adapter on one is like plugging its cable into that switch.
