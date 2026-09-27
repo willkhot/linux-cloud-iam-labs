@@ -1,4 +1,4 @@
-# Linux & Cloud Labs
+# Linux, Cloud & IAM Labs
 
 Hands-on labs covering Linux system administration, networking, security, cloud infrastructure, and identity & access management. Each lab has a write-up with objectives, the steps I followed, screenshots, and key takeaways.
 
@@ -50,6 +50,12 @@ Identity and Access Management with Microsoft Entra ID (SC-300).
 
 **Cloud**
 - AWS EC2: launching, securing and terminating instances
+
+## Author
+
+**Will Khotsyphom**
+
+[![GitHub](https://img.shields.io/badge/GitHub-willkhot-181717?logo=github)](https://github.com/willkhot)
 
 ## Security Note
 
