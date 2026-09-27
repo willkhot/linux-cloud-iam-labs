@@ -196,13 +196,6 @@ This setup is intentionally simple and **not production-ready**:
 - How Linux file ownership and permissions decide who can deploy to the web root
 - A real deploy workflow: develop locally → version with Git → push to GitHub → pull onto the server → publish
 
-## Next Steps
-
-- [ ] Switch SSH to key-based authentication and disable password login
-- [ ] Enable `ufw` with only ports 22 and 80 open
-- [ ] Automate deploys with `git pull` plus a script, or a GitHub Actions pipeline
-- [ ] Add HTTPS with a self-signed certificate
-
 ---
 
 > **Note:** Personal details such as my email, local username and browser bookmarks have been redacted. The IP addresses shown are VirtualBox's default private ranges, which can't be reached from the internet.

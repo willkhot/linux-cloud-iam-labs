@@ -216,14 +216,6 @@ sudo ufw status numbered
 - Setting a default-deny firewall and allowing only what's needed
 - Always keep a recovery path when changing remote-access settings
 
-## Next Steps
-
-- [ ] Add `fail2ban` to rate-limit and ban repeated failed SSH attempts
-- [ ] Check `/etc/ssh/sshd_config.d/*.conf` for overrides (for example cloud-init setting `PasswordAuthentication yes`)
-- [ ] Validate config before restarting with `sudo sshd -t`
-- [ ] Review auth logs with `journalctl -u ssh` or `/var/log/auth.log`
-- [ ] Harden Apache (hide version banners, add HTTPS)
-
 ---
 
 > **Note:** My local username has been redacted from the screenshots, and the admin account is written as `<admin>` in commands. The IPs are private VirtualBox Host-only addresses. The SSH keys shown are **public** keys only, and all lab accounts and keys are for a local, non-production VM.

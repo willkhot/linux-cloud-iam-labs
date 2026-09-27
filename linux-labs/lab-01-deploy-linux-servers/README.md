@@ -126,13 +126,6 @@ After verifying the connection, I terminated the instance from **Instance state 
 - How to connect to a remote Linux server using key-based SSH authentication from Windows
 - Why terminating unused cloud resources matters for cost and security
 
-## Next Steps / Challenge Ideas
-
-- [ ] Launch the same instance with the AWS CLI
-- [ ] Provision it with a CloudFormation template (Infrastructure as Code)
-- [ ] Launch two instances in one subnet and test `ping` between them (what do the security group rules need?)
-- [ ] Launch an instance in a custom VPC and work out what's needed for internet access
-
 ---
 
 > **Note:** Sensitive values such as the account ID, public IPs/DNS names, VPC ID, usernames and key names have been redacted or replaced with placeholders like `<EC2_PUBLIC_DNS>`. All resources shown were terminated after the lab.

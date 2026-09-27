@@ -181,12 +181,6 @@ A route has to exist **in both directions**. If either static route were missing
 - How to make static routes persistent with `up route add` in `/etc/network/interfaces`
 - How to use TTL to count hops, and how to troubleshoot by reading routing tables at each hop
 
-## Next Steps
-
-- [ ] Replace static routes with a dynamic routing protocol (e.g., OSPF using FRRouting)
-- [ ] Use `traceroute` to see each hop directly
-- [ ] Rewrite the config with modern `ip route` / Netplan syntax
-
 ---
 
 > **Note:** All addresses are RFC 1918 private addresses inside isolated VirtualBox internal networks. The VMs come from a course-provided appliance, and its credentials are intentionally left out.
