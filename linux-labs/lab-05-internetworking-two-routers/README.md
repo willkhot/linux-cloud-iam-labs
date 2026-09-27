@@ -2,14 +2,9 @@
 
 ## Overview
 
-This lab builds on [Lab 4](../lab-04-internetworking-one-router/) by adding a **second router** and a **third network**. With two routers in series, each router is only directly connected to two of the three networks, so it has to be *told* how to reach the far one. That's done with **static routes**.
+This one picks up where [Lab 4](../lab-04-internetworking-one-router/) left off, but with a second router and a third network. machine-A is on network-1, machine-C is on network-3, and the two routers are connected by a small network-2 link in the middle.
 
-Key concepts:
-
-- Subnetting a small **point-to-point link** (`/29`) between routers
-- Directly connected routes vs. **static routes** with a next hop
-- How default routes on hosts and static routes on routers work together
-- Tracing a packet hop by hop across three networks
+The catch is that each router only knows about the two networks it's plugged into. router-1 has no idea network-3 exists, so it drops anything headed there. The fix is static routes, where you tell each router directly: "to reach that network, send it to the other router." It has to work in both directions, or the ping gets there but the reply never makes it back. I also used a smaller subnet (`/29`, which gives 6 usable addresses) for the link between the routers. It only needs a couple of addresses, so a full `/24` with 254 would be a waste.
 
 ## Topology
 
@@ -175,11 +170,11 @@ A route has to exist **in both directions**. If either static route were missing
 
 ## What I Learned
 
-- How to size subnets to fit (`/24` for LANs, `/29` for a router-to-router link)
-- The difference between connected routes (`U`) and static routes through a next hop (`UG`)
-- Why every router in the path needs to know how to reach the destination, and how to get back
-- How to make static routes persistent with `up route add` in `/etc/network/interfaces`
-- How to use TTL to count hops, and how to troubleshoot by reading routing tables at each hop
+- How to pick a subnet size that fits: a `/24` for a regular network, and a `/29` for a link that only connects two routers
+- A router automatically knows the networks it's plugged into, but anything farther away needs a static route
+- Every router along the way has to know how to get to the destination and how to get back, or the reply never arrives
+- How to make static routes stick after a reboot by adding them to `/etc/network/interfaces`
+- When a ping fails, checking the routing table on each machine along the path is the fastest way to find the problem
 
 ---
 

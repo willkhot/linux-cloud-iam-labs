@@ -2,12 +2,11 @@
 
 ## Overview
 
-This lab builds a small but complete web-hosting workflow on a local Linux server:
+In this lab I took an Ubuntu Server VM and made it host a website. The VM has two network adapters. NAT lets it reach the internet so it can download packages, and Host-only gives my Windows machine a private connection to it so I can SSH in and load the site in my browser.
 
-1. Stand up an **Ubuntu Server** VM with two network adapters (NAT + Host-only)
-2. Install **OpenSSH Server** and manage the box remotely from Windows
-3. Install **Apache HTTP Server** and serve the default page to the host machine
-4. Version-control a simple website with **Git**, push it to **GitHub**, then clone it onto the server and deploy it to Apache's web root
+From there I installed OpenSSH so I could manage the server remotely, then installed Apache so it could serve web pages. The last part was the workflow: I built a simple site on my laptop, tracked it with Git, pushed it to GitHub, then cloned it onto the server and copied it into Apache's web folder. It's a small version of how code gets from a developer's machine onto a live server.
+
+The diagram below shows how everything connects.
 
 ```mermaid
 flowchart LR
@@ -191,10 +190,10 @@ This setup is intentionally simple and **not production-ready**:
 
 ## What I Learned
 
-- How NAT and Host-only adapters give a VM both internet access and a private link to the host
-- Managing services with `systemctl` (`status`, `start`, `enable`)
-- How Linux file ownership and permissions decide who can deploy to the web root
-- A real deploy workflow: develop locally → version with Git → push to GitHub → pull onto the server → publish
+- NAT gives the VM internet access and Host-only lets my computer talk to it, and you need both for this setup
+- How to check on, start, and enable services with `systemctl`
+- Why I needed `sudo` to update the website: the web folder belongs to root, so a normal user can't change it
+- The basic flow of getting code onto a server: write it locally, commit with Git, push to GitHub, then pull it onto the server
 
 ---
 

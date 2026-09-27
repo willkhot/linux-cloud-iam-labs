@@ -27,29 +27,30 @@ Identity and Access Management with Microsoft Entra ID (SC-300).
 |---|---|---|
 | | *Coming soon* | |
 
-## Skills Practiced
+## What I've Been Learning
 
-**Linux & Systems**
-- Linux installation and command-line basics
-- Virtualization (VirtualBox)
-- Installing and managing services (OpenSSH, Apache) with `apt` and `systemctl`
-- Linux user, group and permission management
-- Git/GitHub version control and deploying to a web server
+I'm still learning all of this, and these labs are how I've been practicing. So far I've gotten comfortable with:
+
+**Linux**
+- Installing Ubuntu Server in VirtualBox and finding my way around the command line
+- Installing software with `apt` and starting or stopping services with `systemctl`
+- Creating users and groups and setting who can access which files
+- Using Git and GitHub to get a website from my laptop onto a server
 
 **Security**
-- SSH key-based authentication
-- SSH hardening (key-only auth, no root login, group-based access)
-- Host firewalls with ufw
-- Cloud security best practices
+- Logging in with SSH keys instead of passwords
+- Locking down SSH so root can't log in and only certain users can
+- Setting up a basic firewall with ufw
+- Only opening the ports I actually need, and shutting down cloud resources when I'm done with them
 
 **Networking**
-- VM networking (NAT vs. Host-only)
-- IPv4 subnet planning and static addressing
-- Linux as a router (IP forwarding, default gateways)
-- Static routing across multiple routers
+- How NAT and Host-only networking work for VMs
+- Planning subnets and giving machines static IPs
+- Turning a Linux VM into a router
+- Adding static routes so traffic can cross more than one router
 
 **Cloud**
-- AWS EC2: launching, securing and terminating instances
+- Launching an EC2 instance on AWS, connecting to it, and terminating it when I'm done
 
 ## Author
 

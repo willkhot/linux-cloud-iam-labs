@@ -2,14 +2,11 @@
 
 ## Overview
 
-This lab builds on the Ubuntu Server from [Lab 2](../lab-02-deploy-services-and-workflow/) and hardens it:
+[Lab 2](../lab-02-deploy-services-and-workflow/) got the server working, but it wasn't very secure. Anyone with a password could SSH in, and there was no firewall. This lab was about locking it down.
 
-1. Create users with appropriate permissions and group memberships
-2. Set up **SSH key pairs** for each user
-3. Harden **sshd**: key-only auth, no root login, and access limited to one group
-4. Enable a host firewall with **ufw**: SSH only from my host, HTTP open
+I created two users, alice and bob, gave only alice admin rights, and made it so they couldn't look through each other's home folders. Then I gave each account its own SSH key and changed the SSH settings so passwords don't work anymore, root can't log in, and only members of one group are allowed in. That group setting ended up locking me out of my own admin account, which turned out to be the most useful part of the lab (Task 3 covers how I got back in). Finally I turned on a firewall that only allows SSH from my computer and leaves the web server open.
 
-The main lesson: **misconfigured services are one of the most common attack vectors.** Deploying a service is only half the job. Configuring it securely is the other half.
+The big takeaway is that installing a service is only half the job. A lot of real attacks go after services that were set up and never configured properly.
 
 ## Objectives
 
@@ -210,11 +207,11 @@ sudo ufw status numbered
 
 ## What I Learned
 
-- How Linux users, groups and permission bits work together for access control
-- How key-based SSH works (public key on the server, private key on the client) and why it beats passwords
-- That `AllowGroups` is an allow-list, and how I locked myself out and recovered
-- Setting a default-deny firewall and allowing only what's needed
-- Always keep a recovery path when changing remote-access settings
+- How users, groups, and file permissions decide who can see and change what
+- How SSH keys work (the public key goes on the server, the private key stays on my computer) and why they're safer than passwords
+- `AllowGroups` blocks everyone who isn't in the listed group, including me. I found that out the hard way.
+- How to set up a firewall that blocks everything by default and only lets in what I actually need
+- Before changing how people log in, make sure there's still a way back in if something goes wrong
 
 ---
 

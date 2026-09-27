@@ -2,10 +2,9 @@
 
 ## Overview
 
-This lab covers two ways to stand up a Linux server:
+This was the first lab, and the goal was to get a Linux server running two different ways. First I set up Ubuntu Server as a VM in VirtualBox on my own computer. That VM stuck around as my practice box for the later labs. Then I did the same thing in the cloud by launching an Amazon Linux instance on AWS EC2.
 
-1. **Locally** — an Ubuntu Server virtual machine running in Oracle VirtualBox, kept around as a practice box for Linux command-line work.
-2. **In the cloud** — an Amazon Linux 2023 instance launched on AWS EC2, accessed over SSH with a key pair, then terminated when finished.
+The EC2 part was the more interesting half. Before launching anything I had to create a key pair, which is how you log in instead of using a password, and a security group, which acts like a firewall in front of the instance. I set the security group to only allow SSH from my own IP. Once the instance was running I SSH'd into it from PowerShell, made sure everything worked, and then terminated it so it wouldn't keep costing money or sit there exposed.
 
 ## Objectives
 
@@ -121,10 +120,10 @@ After verifying the connection, I terminated the instance from **Instance state 
 
 ## What I Learned
 
-- The difference between running a VM locally (VirtualBox) and in the cloud (EC2)
-- How key pairs and security groups work together to control SSH access
-- How to connect to a remote Linux server using key-based SSH authentication from Windows
-- Why terminating unused cloud resources matters for cost and security
+- Running a VM on my own computer is pretty similar to running one in the cloud. The main difference is who owns the hardware.
+- The key pair is how you prove who you are, and the security group decides who's even allowed to try connecting
+- How to SSH into a remote server from PowerShell using a key file instead of a password
+- To shut down cloud stuff when I'm done with it, because it costs money and it's one more thing someone could attack
 
 ---
 

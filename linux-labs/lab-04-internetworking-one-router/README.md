@@ -2,13 +2,9 @@
 
 ## Overview
 
-This lab builds two separate IPv4 networks in VirtualBox and connects them with a Linux machine acting as a **router**. It covers the core building blocks of IP networking:
+This lab was about how separate networks talk to each other. I planned out the addressing for two networks, built them in VirtualBox, and put two machines on the first network and one on the second. Then I set up another Linux VM to act as a router between them.
 
-- Planning address space (network ID, broadcast, usable range, gateway)
-- Layer 2 connectivity (same segment) vs. Layer 3 connectivity (same subnet)
-- Static IP configuration on Linux
-- Turning a Linux host into a router with **IP forwarding**
-- **Default gateways** and how hosts reach other networks
+Machines on the same network could ping each other right away, but machine-C on the other network couldn't reach anything until the router was in place. Getting it working took two things. First, I turned on IP forwarding so the router would pass traffic along instead of dropping it. Second, I gave every machine a default gateway so it knew where to send traffic meant for a different network.
 
 > **Next:** [Lab 5](../lab-05-internetworking-two-routers/) extends this to two routers, three networks and static routes.
 
@@ -164,11 +160,11 @@ This adds a **default route** (`0.0.0.0/0 → gateway`) to each host's routing t
 
 ## What I Learned
 
-- How to size a subnet and work out its network ID, broadcast, usable range and gateway
-- The difference between Layer 2 reachability (same segment) and Layer 3 reachability (same prefix)
-- Why hosts need a default gateway, and why a Linux host needs `ip_forward` to route
-- How to read `route -n` output: `U` means the route is up, `G` means it goes through a gateway
-- How to use TTL to count router hops
+- How to plan a subnet: the network ID, the broadcast address, which addresses are usable, and which one goes to the gateway
+- Two machines can talk directly only if they're on the same network segment and in the same subnet
+- A machine needs a default gateway to reach other networks, and a Linux box needs IP forwarding turned on before it will act as a router
+- How to read a routing table with `route -n` (`U` means the route is up, `G` means it goes through a gateway)
+- The TTL in a ping reply drops by 1 for every router the packet passes through, so it tells you how many hops it took
 
 ---
 
