@@ -16,7 +16,7 @@ Hands-on labs covering Linux system administration, networking, security, cloud 
 
 | Platform | Labs |
 |---|---|
-| [AWS](cloud-labs/aws/) | *Coming soon* |
+| [AWS](cloud-labs/aws/) | [01 — Introduction to AWS IAM](cloud-labs/aws/lab-01-intro-to-iam/) |
 | [Azure](cloud-labs/azure/) | *Coming soon* |
 
 ## 🔐 [IAM Labs](iam-labs/)
@@ -51,6 +51,7 @@ I'm still learning all of this, and these labs are how I've been practicing. So 
 
 **Cloud**
 - Launching an EC2 instance on AWS, connecting to it, and terminating it when I'm done
+- Giving AWS IAM users only the access their job needs by putting them in groups with the right policies
 
 ## Author
 
