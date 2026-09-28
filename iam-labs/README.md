@@ -4,7 +4,7 @@ Identity and Access Management labs, focused on **Microsoft Entra ID** and align
 
 | # | Lab | Topics |
 |---|---|---|
-| | *Coming soon* | |
+| 01 | [Manage Users, Groups, Licenses, and Custom Security Attributes](lab-01-manage-users-groups-licenses/) | Users, security groups, dynamic membership, group-based licensing, custom security attributes |
 
 **Planned focus areas (SC-300 domains):**
 - Implement and manage user identities (users, groups, external identities, hybrid identity)
