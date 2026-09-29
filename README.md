@@ -28,7 +28,7 @@ Identity and Access Management with Microsoft Entra ID (SC-300).
 
 ## What I've Been Learning
 
-I'm still pretty new to all of this. Doing these labs and writing them up is how I make sure I actually understand what I did, not just that I followed the steps. Here's what I've picked up so far:
+Here's what I've picked up so far:
 
 **Linux**
 - Setting up Ubuntu Server VMs and getting comfortable on the command line
