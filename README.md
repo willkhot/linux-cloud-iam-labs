@@ -17,7 +17,6 @@ Hands-on labs covering Linux system administration, networking, security, cloud 
 | Platform | Labs |
 |---|---|
 | [AWS](cloud-labs/aws/) | [01 — Introduction to AWS IAM](cloud-labs/aws/lab-01-intro-to-iam/) |
-| [Azure](cloud-labs/azure/) | *Coming soon* |
 
 ## 🔐 [IAM Labs](iam-labs/)
 
