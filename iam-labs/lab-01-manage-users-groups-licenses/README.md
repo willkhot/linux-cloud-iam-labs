@@ -299,13 +299,14 @@ This section of the course was slides only, but here are the three ways a device
 
 ## What I Learned
 
-- A user only needs four fields to exist, but the optional properties (department, job title, usage location) are what make automation and licensing work later
-- Creating accounts disabled until they're needed is a simple way to practice Zero Trust
-- Deleted users can be restored for 30 days before they're gone permanently
-- The difference between security groups and Microsoft 365 groups, and between Assigned and Dynamic membership
-- Whether a group is role-assignable can't be changed after it's created, and dynamic and role-assignable groups can't contain other groups
-- Licenses are managed in the Microsoft 365 admin center now, and group-based licensing saves work as long as there are enough licenses for everyone in the group
-- Global Administrator doesn't automatically get access to custom security attributes. Those need their own attribute roles
+- A user only needs a few fields to be created, but filling in things like department and job title is what makes automation work later
+- You can create an account turned off and turn it on the day the person starts, so it can't be used before it's needed
+- Deleted users stay around for 30 days, so you can get them back if they were deleted by mistake
+- Security groups are for giving access and licenses, and Microsoft 365 groups are for teamwork like shared email, files, and calendars
+- Dynamic groups add people automatically based on a rule, like "everyone in the IT department"
+- Some group settings can't be changed after the group is created, so it's worth planning before making one
+- Licensing a whole group is easier than licensing people one at a time, as long as there are enough licenses for everyone
+- Even a Global Administrator can't manage custom security attributes without being given a separate role
 
 ---
 

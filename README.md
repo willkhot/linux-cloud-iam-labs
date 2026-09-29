@@ -28,29 +28,34 @@ Identity and Access Management with Microsoft Entra ID (SC-300).
 
 ## What I've Been Learning
 
-I'm still learning all of this, and these labs are how I've been practicing. So far I've gotten comfortable with:
+I'm still pretty new to all of this. Doing these labs and writing them up is how I make sure I actually understand what I did, not just that I followed the steps. Here's what I've picked up so far:
 
 **Linux**
-- Installing Ubuntu Server in VirtualBox and finding my way around the command line
-- Installing software with `apt` and starting or stopping services with `systemctl`
-- Creating users and groups and setting who can access which files
-- Using Git and GitHub to get a website from my laptop onto a server
-
-**Security**
-- Logging in with SSH keys instead of passwords
-- Locking down SSH so root can't log in and only certain users can
-- Setting up a basic firewall with ufw
-- Only opening the ports I actually need, and shutting down cloud resources when I'm done with them
+- Setting up Ubuntu Server VMs and getting comfortable on the command line
+- Installing and running services like SSH and a web server (Apache)
+- Managing users, groups, and who can access which files
+- Getting a website from my laptop onto a server with Git and GitHub
 
 **Networking**
-- How NAT and Host-only networking work for VMs
+- How a VM connects to the internet and to my own computer
 - Planning subnets and giving machines static IPs
-- Turning a Linux VM into a router
-- Adding static routes so traffic can cross more than one router
+- How routers pass traffic between networks, and why every router needs to know the way there and the way back
 
-**Cloud**
-- Launching an EC2 instance on AWS, connecting to it, and terminating it when I'm done
-- Giving AWS IAM users only the access their job needs by putting them in groups with the right policies
+**Security**
+- Using SSH keys instead of passwords, and limiting who's allowed to log in
+- Setting up a basic firewall that only lets in what's needed
+- Always leaving myself a way back in before changing login settings (I learned that one by locking myself out)
+
+**Cloud (AWS)**
+- Launching a server on EC2, connecting to it, and shutting it down when I'm done
+- Using IAM groups and policies so each user only gets the access their job needs
+
+**Identity (Microsoft Entra ID)**
+- Creating and managing users and groups, including groups that add people automatically based on a rule
+- Giving out licenses to a whole group instead of one person at a time
+- Tagging users with custom attributes, like a security clearance level
+
+The same idea keeps coming up in every lab, whether it's Linux, AWS, or Entra: give people only the access they actually need. It's called least privilege, and it shows up everywhere.
 
 ## Author
 
