@@ -25,6 +25,7 @@ Identity and Access Management with Microsoft Entra ID (SC-300).
 | # | Lab | Topics |
 |---|---|---|
 | 01 | [Manage Users, Groups, Licenses, and Custom Security Attributes](iam-labs/lab-01-manage-users-groups-licenses/) | Users, security groups, dynamic membership, group-based licensing, custom security attributes |
+| 02 | [Company Branding, Entra Roles, Custom Roles, and Administrative Units](iam-labs/lab-02-branding-roles-admin-units/) | Sign-in branding, role assignment, role-assignable groups, custom roles, administrative units, custom domains, tenant settings |
 
 ## What I've Been Learning
 
