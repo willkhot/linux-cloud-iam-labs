@@ -20,12 +20,13 @@ Hands-on labs covering Linux system administration, networking, security, cloud 
 
 ## 🔐 [IAM Labs](iam-labs/)
 
-Identity and Access Management with Microsoft Entra ID (SC-300).
+Identity and Access Management with Microsoft Entra ID. Documenting what I'm learning as I study for SC-300.
 
 | # | Lab | Topics |
 |---|---|---|
 | 01 | [Manage Users, Groups, Licenses, and Custom Security Attributes](iam-labs/lab-01-manage-users-groups-licenses/) | Users, security groups, dynamic membership, group-based licensing, custom security attributes |
 | 02 | [Company Branding, Entra Roles, Custom Roles, and Administrative Units](iam-labs/lab-02-branding-roles-admin-units/) | Sign-in branding, role assignment, role-assignable groups, custom roles, administrative units, custom domains, tenant settings |
+| 03 | [External Identities: Guest Users, Cross-Tenant Access, and Collaboration Settings](iam-labs/lab-03-external-identities/) | Guest vs member users, B2B invitations, cross-tenant access settings, identity providers, external collaboration settings |
 
 ## What I've Been Learning
 
