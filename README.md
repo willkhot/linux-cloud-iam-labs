@@ -16,17 +16,27 @@ Hands-on labs covering Linux system administration, networking, security, cloud 
 
 | Platform | Labs |
 |---|---|
-| [AWS](cloud-labs/aws/) | [01 — Introduction to AWS IAM](cloud-labs/aws/lab-01-intro-to-iam/) |
+| [AWS](cloud-labs/aws/) | *Coming soon.* For now, see [Introduction to AWS IAM](iam-labs/aws/lab-01-intro-to-iam/) and the EC2 deployment in [Linux Lab 01](linux-labs/lab-01-deploy-linux-servers/) |
 
 ## 🔐 [IAM Labs](iam-labs/)
 
-Identity and Access Management with Microsoft Entra ID. Documenting what I'm learning as I study for SC-300.
+Identity and Access Management, organized by provider.
+
+### [Microsoft Entra ID](iam-labs/entra/)
+
+Documenting what I'm learning as I study for SC-300.
 
 | # | Lab | Topics |
 |---|---|---|
-| 01 | [Manage Users, Groups, Licenses, and Custom Security Attributes](iam-labs/lab-01-manage-users-groups-licenses/) | Users, security groups, dynamic membership, group-based licensing, custom security attributes |
-| 02 | [Company Branding, Entra Roles, Custom Roles, and Administrative Units](iam-labs/lab-02-branding-roles-admin-units/) | Sign-in branding, role assignment, role-assignable groups, custom roles, administrative units, custom domains, tenant settings |
-| 03 | [External Identities: Guest Users, Cross-Tenant Access, and Collaboration Settings](iam-labs/lab-03-external-identities/) | Guest vs member users, B2B invitations, cross-tenant access settings, identity providers, external collaboration settings |
+| 01 | [Manage Users, Groups, Licenses, and Custom Security Attributes](iam-labs/entra/lab-01-manage-users-groups-licenses/) | Users, security groups, dynamic membership, group-based licensing, custom security attributes |
+| 02 | [Company Branding, Entra Roles, Custom Roles, and Administrative Units](iam-labs/entra/lab-02-branding-roles-admin-units/) | Sign-in branding, role assignment, role-assignable groups, custom roles, administrative units, custom domains, tenant settings |
+| 03 | [External Identities: Guest Users, Cross-Tenant Access, and Collaboration Settings](iam-labs/entra/lab-03-external-identities/) | Guest vs member users, B2B invitations, cross-tenant access settings, identity providers, external collaboration settings |
+
+### [AWS](iam-labs/aws/)
+
+| # | Lab | Topics |
+|---|---|---|
+| 01 | [Introduction to AWS IAM](iam-labs/aws/lab-01-intro-to-iam/) | IAM users, user groups, managed vs inline policies, least privilege, IAM sign-in URL |
 
 ## What I've Been Learning
 

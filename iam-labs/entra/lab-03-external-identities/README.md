@@ -185,4 +185,4 @@ The **Custom** tab is for adding other identity providers, like a partner's SAML
 
 > **Note:** Screenshots are from my personal lab tenant. The tenant domain, tenant ID, my admin account and name, user principal names, the guest's email address, and the invite redirect URL have been redacted. The member users shown (Chris Green, Kaitlyn Ly, etc.) are fictional test accounts for a made-up company.
 
-[← Back to IAM Labs](../)
+[← Back to Entra ID Labs](../)

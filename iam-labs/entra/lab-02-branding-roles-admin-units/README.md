@@ -335,4 +335,4 @@ After I added `bamco.com`, Entra gave me a **TXT record** to create with the dom
 
 > **Note:** Screenshots are from my personal lab tenant. The tenant domain, tenant ID, my admin account and name, the technical contact email, user principal names, Object IDs, and the domain verification value have been redacted. The users shown (Kaitlyn Ly, Ben Miller, etc.) are fictional test accounts for a made-up company, and `bamco.com` was never verified.
 
-[← Back to IAM Labs](../)
+[← Back to Entra ID Labs](../)

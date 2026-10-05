@@ -312,4 +312,4 @@ This section of the course was slides only, but here are the three ways a device
 
 > **Note:** Screenshots are from my personal lab tenant. The tenant domain, admin account, user principal names, Object IDs, and my own accounts have been redacted. The users shown (Frank Gallagher, Ben Miller, etc.) are fictional test accounts for a made-up company.
 
-[← Back to IAM Labs](../)
+[← Back to Entra ID Labs](../)

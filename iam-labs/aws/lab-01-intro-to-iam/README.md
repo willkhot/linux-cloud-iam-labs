@@ -242,4 +242,4 @@ Then I closed the private window.
 
 > **Note:** Screenshots are from a temporary AWS lab account. The AWS account ID, my lab session username, ARNs, the access key ID, the IAM sign-in URLs, public IP addresses and public DNS names, and the encoded authorization message have been redacted. `user-1`, `user-2`, and `user-3` are sample users that were already set up in the account, and the environment was shut down after I finished.
 
-[← Back to AWS Labs](../)
+[← Back to AWS IAM Labs](../)
