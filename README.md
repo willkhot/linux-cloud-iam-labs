@@ -16,7 +16,7 @@ Hands-on labs covering Linux system administration, networking, security, cloud 
 
 | Platform | Labs |
 |---|---|
-| [AWS](cloud-labs/aws/) | *Coming soon.* For now, see [Introduction to AWS IAM](iam-labs/aws/lab-01-intro-to-iam/) and the EC2 deployment in [Linux Lab 01](linux-labs/lab-01-deploy-linux-servers/) |
+| [AWS](cloud-labs/aws/) ||
 
 ## 🔐 [IAM Labs](iam-labs/)
 
