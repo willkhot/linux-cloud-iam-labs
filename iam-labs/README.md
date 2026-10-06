@@ -9,12 +9,13 @@ Follow-alongs from the courses I'm taking.
 | Platform | Focus |
 |---|---|
 | [Microsoft Entra ID](entra/) | Users, groups, roles, and external identities. What I'm learning as I study for **SC-300** |
-| [AWS](aws/) | IAM users, user groups, and policies |
 
 ## Labs
 
 | Section | Focus |
 |---|---|
 | [Labs](labs/) | Labs I build on my own, without a course to follow |
+
+> For IAM on AWS, see [Introduction to AWS IAM](../cloud-labs/aws/lab-01-intro-to-iam/) in the Cloud Labs.
 
 [← Back to all labs](../)

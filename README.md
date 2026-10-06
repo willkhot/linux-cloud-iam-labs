@@ -16,7 +16,7 @@ Hands-on labs covering Linux system administration, networking, security, cloud 
 
 | Platform | Labs |
 |---|---|
-| [AWS](cloud-labs/aws/) ||
+| [AWS](cloud-labs/aws/) | [01 — Introduction to AWS IAM](cloud-labs/aws/lab-01-intro-to-iam/) |
 
 ## 🔐 [IAM Labs](iam-labs/)
 
@@ -31,12 +31,6 @@ Documenting what I'm learning as I study for SC-300.
 | 01 | [Manage Users, Groups, Licenses, and Custom Security Attributes](iam-labs/entra/lab-01-manage-users-groups-licenses/) | Users, security groups, dynamic membership, group-based licensing, custom security attributes |
 | 02 | [Company Branding, Entra Roles, Custom Roles, and Administrative Units](iam-labs/entra/lab-02-branding-roles-admin-units/) | Sign-in branding, role assignment, role-assignable groups, custom roles, administrative units, custom domains, tenant settings |
 | 03 | [External Identities: Guest Users, Cross-Tenant Access, and Collaboration Settings](iam-labs/entra/lab-03-external-identities/) | Guest vs member users, B2B invitations, cross-tenant access settings, identity providers, external collaboration settings |
-
-### Course Exercises: [AWS](iam-labs/aws/)
-
-| # | Exercise | Topics |
-|---|---|---|
-| 01 | [Introduction to AWS IAM](iam-labs/aws/lab-01-intro-to-iam/) | IAM users, user groups, managed vs inline policies, least privilege, IAM sign-in URL |
 
 ### [Labs](iam-labs/labs/)
 
