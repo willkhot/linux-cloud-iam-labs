@@ -39,7 +39,7 @@ Labs I build on my own from what I learned in the course exercises.
 
 | # | Lab | Topics |
 |---|---|---|
-| | *Coming soon* | |
+| 01 | [Building a Hybrid Identity Lab: Active Directory on Hyper-V (Part 1)](iam-labs/labs/lab-01-hybrid-identity-ad-entra-connect/) | Hyper-V, Windows Server 2022, AD DS, DNS, new forest, domain join. *Part 2 (Entra Connect) in progress* |
 
 ## What I've Been Learning
 
