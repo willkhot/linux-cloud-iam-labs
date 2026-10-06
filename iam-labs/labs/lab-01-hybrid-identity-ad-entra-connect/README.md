@@ -215,16 +215,6 @@ And it worked:
 ## To Be Continued
 
 **Part 2: Connect Active Directory to Microsoft Entra ID with Entra Connect.**
-
-This lab now has an on-prem domain, but it isn't connected to anything in the cloud yet. Next I plan to:
-
-- [ ] Give `BAM-DC01` a static IP address
-- [ ] Create a few test users and groups in Active Directory
-- [ ] Install Microsoft Entra Connect and link `bamco.internal` to my Entra tenant
-- [ ] Choose a sign-in method (starting with password hash synchronization)
-- [ ] Run a sync and confirm the on-prem users show up in the Entra admin center
-- [ ] Test signing in to the cloud with an on-prem account
-
 *This section will be updated when Part 2 is done.*
 
 ---
