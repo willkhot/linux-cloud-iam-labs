@@ -16,7 +16,7 @@ Hands-on labs covering Linux system administration, networking, security, cloud 
 
 | Platform | Labs |
 |---|---|
-| [AWS](cloud-labs/aws/) | [01 — Introduction to AWS IAM](cloud-labs/aws/lab-01-intro-to-iam/)<br>[02 — Building a VPC with Public and Private Subnets](cloud-labs/aws/lab-02-build-a-vpc/) |
+| [AWS](cloud-labs/aws/) | [01 — Introduction to AWS IAM](cloud-labs/aws/lab-01-intro-to-iam/) |
 
 ## 🔐 [IAM Labs](iam-labs/)
 
@@ -64,7 +64,6 @@ Here's what I've picked up so far:
 **Cloud (AWS)**
 - Launching a server on EC2, connecting to it, and shutting it down when I'm done
 - Using IAM groups and policies so each user only gets the access their job needs
-- Building a VPC with a public and a private subnet, and seeing how route tables decide which one can reach the internet
 
 **Identity (Microsoft Entra ID)**
 - Creating and managing users and groups, including groups that add people automatically based on a rule
