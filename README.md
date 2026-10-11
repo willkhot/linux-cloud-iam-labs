@@ -16,7 +16,7 @@ Hands-on labs covering Linux system administration, networking, security, cloud 
 
 | Platform | Labs |
 |---|---|
-| [AWS](cloud-labs/aws/) | [01 — Introduction to AWS IAM](cloud-labs/aws/lab-01-intro-to-iam/)<br>[02 — Build a VPC and Launch a Web Server](cloud-labs/aws/lab-02-build-vpc-launch-web-server/)<br>[03 — Introduction to Amazon EC2](cloud-labs/aws/lab-03-intro-to-ec2/)<br>[04 — AWS Lambda: Stopping an EC2 Instance on a Schedule](cloud-labs/aws/lab-04-aws-lambda/) |
+| [AWS](cloud-labs/aws/) | [01 — Introduction to AWS IAM](cloud-labs/aws/lab-01-intro-to-iam/)<br>[02 — Build a VPC and Launch a Web Server](cloud-labs/aws/lab-02-build-vpc-launch-web-server/)<br>[03 — Introduction to Amazon EC2](cloud-labs/aws/lab-03-intro-to-ec2/)<br>[04 — AWS Lambda: Stopping an EC2 Instance on a Schedule](cloud-labs/aws/lab-04-aws-lambda/)<br>[05 — AWS Elastic Beanstalk: Deploying a Web App](cloud-labs/aws/lab-05-elastic-beanstalk/) |
 
 ## 🔐 [IAM Labs](iam-labs/)
 
@@ -67,6 +67,7 @@ Here's what I've picked up so far:
 - Building a VPC with public and private subnets and launching a web server inside it
 - Monitoring and resizing an EC2 instance, and opening only the port it needs in its security group
 - Running code on a schedule with Lambda and EventBridge, with an IAM role deciding what the code is allowed to do
+- Deploying a web app with Elastic Beanstalk and finding the load balancer, Auto Scaling group, and instances it runs on
 
 **Identity (Microsoft Entra ID)**
 - Creating and managing users and groups, including groups that add people automatically based on a rule
