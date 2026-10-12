@@ -32,6 +32,7 @@ Documenting what I'm learning as I study for SC-300.
 | 02 | [Company Branding, Entra Roles, Custom Roles, and Administrative Units](iam-labs/entra/lab-02-branding-roles-admin-units/) | Sign-in branding, role assignment, role-assignable groups, custom roles, administrative units, custom domains, tenant settings |
 | 03 | [External Identities: Guest Users, Cross-Tenant Access, and Collaboration Settings](iam-labs/entra/lab-03-external-identities/) | Guest vs member users, B2B invitations, cross-tenant access settings, identity providers, external collaboration settings |
 | 04 | [Hybrid Identity: Entra Connect and Authentication Methods](iam-labs/entra/lab-04-hybrid-identity/) | Hybrid identity, Cloud Sync vs Connect Sync, password writeback, password hash sync, pass-through authentication, federation |
+| 05 | [Multifactor Authentication: Methods, Policies, and Registration](iam-labs/entra/lab-05-multifactor-authentication/) | MFA factors, per-user MFA, authentication methods policies, registration campaign, Microsoft Authenticator, My Sign-Ins |
 
 ### [Labs](iam-labs/labs/)
 

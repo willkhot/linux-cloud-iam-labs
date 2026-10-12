@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is my third SC-300 lab. It follows *Implement an Identity Management Solution, Part 3* in the Microsoft Learn SC-300 series, and like the first two labs, I did everything in my own Microsoft Entra tenant for the made-up company **Bam Co.**
+This is my third SC-300 lab. Like the first two labs, I did everything in my own Microsoft Entra tenant for the made-up company **Bam Co.**
 
 [Lab 1](../lab-01-manage-users-groups-licenses/) and [Lab 2](../lab-02-branding-roles-admin-units/) were about people inside the company. This lab is about people **outside** it, like contractors, vendors, and partners. First I invited an external user as a guest and went through each tab of the invite. Then I looked at the three places that control how outside users get in: cross-tenant access settings, identity providers, and external collaboration settings.
 

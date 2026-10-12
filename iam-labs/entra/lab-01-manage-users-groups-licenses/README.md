@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is my first SC-300 lab. It follows the *Implement an Identity Management Solution* part of the Microsoft Learn SC-300 series, and I did everything in my own Microsoft Entra tenant for a made-up company called **Bam Co.**
+This is my first SC-300 lab. I did everything in my own Microsoft Entra tenant for a made-up company called **Bam Co.**
 
 I created a user, looked at what Entra stores about them, then deleted them and saw where deleted users go. Next I built a security group, tried a dynamic membership rule, and added and removed members by hand. After that I assigned a license to a user and then to a group from the Microsoft 365 admin center. Last, I made a custom security attribute (a security clearance level), gave it to a user, and filtered the user list by it.
 

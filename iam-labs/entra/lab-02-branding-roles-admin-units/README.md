@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is my second SC-300 lab. It follows *Implement an Identity Management Solution, Part 2* in the Microsoft Learn SC-300 series, and like Lab 1, I did everything in my own Microsoft Entra tenant for the made-up company **Bam Co.**
+This is my second SC-300 lab. Like Lab 1, I did everything in my own Microsoft Entra tenant for the made-up company **Bam Co.**
 
 First I branded the sign-in page with a favicon, a background image, and a welcome message. Then I worked on who gets admin access: I assigned Entra roles three ways (from a user, from a role, and through a role-assignable group) and built a custom role that only has app registration permissions. After that I created an administrative unit for a St. Louis team so an admin could manage just those users. Last, I added a custom domain and went through the tenant-wide properties and user settings.
 

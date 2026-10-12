@@ -2,9 +2,7 @@
 
 ## Overview
 
-This is my fourth SC-300 lab. It follows *Implement an Identity Management Solution, Part 4* in the Microsoft Learn SC-300 series.
-
-The first three labs were all in the cloud. This one is about **hybrid identity**, which is what a company uses when it still has an on-premises Active Directory and also uses Microsoft Entra ID. The goal is for each person to have **one identity** that works in both places.
+This is my fourth SC-300 lab. The first three labs were all in the cloud. This one is about **hybrid identity**, which is what a company uses when it still has an on-premises Active Directory and also uses Microsoft Entra ID. The goal is for each person to have **one identity** that works in both places.
 
 This lab is mostly concepts. I don't have an on-prem Active Directory server, so I didn't install or sync anything. I looked at the **Entra Connect** page in my tenant, compared the two sync tools, and learned the three ways a hybrid user can sign in: password hash synchronization, pass-through authentication, and federation.
 
