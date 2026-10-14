@@ -9,6 +9,7 @@ Identity and Access Management labs on **Microsoft Entra ID**. These labs docume
 | 03 | [External Identities: Guest Users, Cross-Tenant Access, and Collaboration Settings](lab-03-external-identities/) | Guest vs member users, B2B invitations, cross-tenant access settings, identity providers, external collaboration settings |
 | 04 | [Hybrid Identity: Entra Connect and Authentication Methods](lab-04-hybrid-identity/) | Hybrid identity, Cloud Sync vs Connect Sync, password writeback, password hash sync, pass-through authentication, federation |
 | 05 | [Multifactor Authentication: Methods, Policies, and Registration](lab-05-multifactor-authentication/) | MFA factors, per-user MFA, authentication methods policies, registration campaign, Microsoft Authenticator, My Sign-Ins |
+| 06 | [Authentication Methods: Passwordless, FIDO2, and Monitoring](lab-06-authentication-methods/) | Method strength, system-preferred MFA, report suspicious activity, FIDO2, Microsoft Authenticator, Windows Hello for Business, CBA, registration and usage reports |
 
 **Planned focus areas (SC-300 domains):**
 - Implement and manage user identities (users, groups, external identities, hybrid identity)
