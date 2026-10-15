@@ -34,6 +34,7 @@ Documenting what I'm learning as I study for SC-300.
 | 04 | [Hybrid Identity: Entra Connect and Authentication Methods](iam-labs/entra/lab-04-hybrid-identity/) | Hybrid identity, Cloud Sync vs Connect Sync, password writeback, password hash sync, pass-through authentication, federation |
 | 05 | [Multifactor Authentication: Methods, Policies, and Registration](iam-labs/entra/lab-05-multifactor-authentication/) | MFA factors, per-user MFA, authentication methods policies, registration campaign, Microsoft Authenticator, My Sign-Ins |
 | 06 | [Authentication Methods: Passwordless, FIDO2, and Monitoring](iam-labs/entra/lab-06-authentication-methods/) | Method strength, system-preferred MFA, report suspicious activity, FIDO2, Microsoft Authenticator, Windows Hello for Business, CBA, registration and usage reports |
+| 07 | [Self-Service Password Reset (SSPR)](iam-labs/entra/lab-07-self-service-password-reset/) | SSPR licensing, selected-group scope, methods required to reset, security questions, administrator policy, user reset with Authenticator |
 
 ### [Labs](iam-labs/labs/)
 
